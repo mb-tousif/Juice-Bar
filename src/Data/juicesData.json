@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Cucumber Juice",
+    "price": 10.99,
+    "imgUrl": "/img/juiceBar-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Aloe vera Juice",
+    "price": 12.99,
+    "imgUrl": "/img/juiceBar-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Apple Juice",
+    "price": 14.99,
+    "imgUrl": "/img/juiceBar-3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Combo Juice Pack",
+    "price": 26.99,
+    "imgUrl": "/img/juiceBar-4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Refreshing Combo Juice Pack",
+    "price": 24.99,
+    "imgUrl": "/img/juiceBar-5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Summer Combo Juice Pack",
+    "price": 22.99,
+    "imgUrl": "/img/juiceBar-6.jpg"
+  }
+]
