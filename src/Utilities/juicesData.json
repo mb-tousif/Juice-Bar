@@ -19,19 +19,19 @@
   },
   {
     "id": 4,
-    "name": "Combo Juice Pack",
+    "name": "Combo Couple Pack",
     "price": 26.99,
     "imgUrl": "/img/juiceBar-4.jpg"
   },
   {
     "id": 5,
-    "name": "Refreshing Combo Juice Pack",
+    "name": "Refreshing FNF Pack",
     "price": 24.99,
     "imgUrl": "/img/juiceBar-5.jpg"
   },
   {
     "id": 6,
-    "name": "Summer Combo Juice Pack",
+    "name": "Summer FNF Pack",
     "price": 22.99,
     "imgUrl": "/img/juiceBar-6.jpg"
   }
