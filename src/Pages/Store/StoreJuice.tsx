@@ -24,9 +24,9 @@ export default function StoreJuice({id, name, price, imgUrl}: ItemProps) {
         </h1>
       </div>
       {quantity === 0 ? (
-        <button onClick={()=> setQuantity(1)} className="w-full">Add to Cart</button>
+        <button onClick={()=> setQuantity(1)} className="w-full mb-4">Add to Cart</button>
       ) : (
-        <div className="mt-2 mb-2">
+        <div className="mt-2 mb-4">
           <div className="flex justify-center align-middle">
             <AiFillMinusCircle className="text-red-600 h-6 w-6 hover:cursor-pointer" />
             <span className="ml-2 mr-2">{quantity} Add to Cart</span>

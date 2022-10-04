@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose, AiFillHeart } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../Images/logo.png";
@@ -8,7 +8,7 @@ import logo from "../../Images/logo.png";
 export default function Header() {
   const [open, setOpen] = useState<Boolean>(false);
   return (
-    <nav className="bg-lime-800 relative z-10">
+    <nav className="bg-[#184f18f3] relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex flex-auto">
@@ -39,10 +39,10 @@ export default function Header() {
                   Store
                 </Link>
                 <Link
-                  to="/wishList"
-                  className="text-white mx-auto my-auto ml-2 mr-4 justify-end rounded-md text-base md:text-lg font-medium"
+                  to="/contact"
+                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
                 >
-                  <AiFillHeart className="w-7 h-7" />
+                  Contact
                 </Link>
                 <Link
                   to="/cart"
@@ -87,10 +87,10 @@ export default function Header() {
             Store
           </Link>
           <Link
-            to="/wishList"
-            className="text-white block px-3 py-2 text-base font-medium"
+            to="/contact"
+            className="text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            <AiFillHeart className="w-7 h-7" />
+            Contact
           </Link>
           <Link
             to="/cart"

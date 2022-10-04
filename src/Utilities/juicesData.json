@@ -3,31 +3,36 @@
     "id": 1,
     "name": "Cucumber Juice",
     "price": 10.99,
-    "imgUrl": "/img/juiceBar-1.jpg"
+    "imgUrl": "/img/juiceBar-1.jpg",
+    "description": "Celery, kale, spinach, cucumber, parsley, and lemon. 60cal | 100cal"
   },
   {
     "id": 2,
-    "name": "Aloe vera Juice",
+    "name": "Greens",
     "price": 12.99,
-    "imgUrl": "/img/juiceBar-2.jpg"
+    "imgUrl": "/img/juiceBar-2.jpg",
+    "description": "Spinach, kale, pineapple, banana, lemon, apple juice, coconut milk. 270cal | 360cal"
   },
   {
     "id": 3,
     "name": "Apple Juice",
     "price": 14.99,
-    "imgUrl": "/img/juiceBar-3.jpg"
+    "imgUrl": "/img/juiceBar-3.jpg",
+    "description": "Juiced apple, lemon, dragon-fruit powder, mango, and strawberry. 303cal | 511cal"
   },
   {
     "id": 4,
     "name": "Combo Couple Pack",
     "price": 26.99,
-    "imgUrl": "/img/juiceBar-4.jpg"
+    "imgUrl": "/img/juiceBar-4.jpg",
+    "description": "Apple juice, peanut butter, avocado, strawberries, and bananas. 538cal | 697cal"
   },
   {
     "id": 5,
     "name": "Refreshing FNF Pack",
     "price": 24.99,
-    "imgUrl": "/img/juiceBar-5.jpg"
+    "imgUrl": "/img/juiceBar-5.jpg",
+    "description": "Carrot, apple, pineapple, lemon, ginger, and mint. 180cal | 270cal"
   },
   {
     "id": 6,

@@ -1,0 +1,110 @@
+
+.card {
+    height: 20rem;
+    width: 25rem;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+/*Image*/
+.cardImage1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url("../Images/home-1.jpg");
+    background-size: 25rem 20rem;
+}
+
+.cardImage2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url("../Images/home-2.jpg");
+    background-size: 25rem 20rem;
+}
+
+.cardImage3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url("../Images/home-3.jpg");
+    background-size: 25rem 20rem;
+}
+
+.cardImage4 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: url("../Images/home-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 25rem 20rem;
+}
+
+.cardImage5 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: url("../Images/home-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 25rem 20rem;
+}
+
+.cardImage6 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: url("../Images/home-6.jpg");
+    background-repeat: no-repeat;
+    background-size: 25rem 20rem;
+}
+
+/*Description */
+.cardDescription {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 70%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+
+/*Text*/
+.textBody {
+    font-size: 1em;
+    width: 100%;
+    line-height: 150%;
+    margin: auto;
+}
+
+
+/* Hover states */
+
+.card:hover .cardDescription {
+    transform: translateY(100%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 20rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+    .card {
+            width: 25rem;
+    }
+}
