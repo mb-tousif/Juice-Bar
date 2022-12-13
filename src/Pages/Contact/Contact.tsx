@@ -5,9 +5,9 @@ import { MdOutgoingMail } from "react-icons/md";
 export default function Contact() {
   return (
     <div className="text-center">
+      <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold text-lime-800 mt-2 mb-4">/DROP US A LINE</h1>
       <img src={heroPic} alt="Banner" className='w-full md:w-3/4 mx-auto mt-4 max-h-60' />
-      <h1 className="text-3xl text-lime-800 mb-2 mt-3">/DROP US A LINE</h1>
-      <p className='text-base'>
+      <p className='text-base mt-2 font-semibold'>
         We want to hear from you! Please fill out the form completely and we
         will get back to you within 24 hours.
       </p>
