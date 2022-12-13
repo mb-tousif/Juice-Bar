@@ -3,7 +3,7 @@ import { FcPlus } from "react-icons/fc";
 import { AiFillMinusCircle } from "react-icons/ai";
 import { useContextAPI } from '../../Context/CartContext';
 
-type ItemProps = {
+interface ItemProps {
   id: number;
   name: string;
   price: number;
@@ -11,7 +11,7 @@ type ItemProps = {
 };
 
 
-export default function StoreJuice({id, name, price, imgUrl}: ItemProps) { 
+export default function BowlsStore({id, name, price, imgUrl}: ItemProps) { 
   const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart }=useContextAPI();
   
   const quantity = getItemQuantity(id)

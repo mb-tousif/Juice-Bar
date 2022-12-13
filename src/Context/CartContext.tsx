@@ -1,16 +1,16 @@
-import React, { createContext, ReactNode, useContext } from 'react'
+import { createContext, ReactNode, useContext } from 'react'
 import { useLocalStorage } from '../Hooks/useLocalStorage';
 
-type CartContextProps = {
+interface CartContextProps {
   children: ReactNode;
 }
 
-type CartItem = {
+interface CartItem {
   id: number;
   quantity: number;
 };
 
-type ShoppingCartContext = {
+interface ShoppingCartContext {
   getItemQuantity: (id: number) => number;
   increaseCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;

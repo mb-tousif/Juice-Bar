@@ -3,42 +3,42 @@
     "id": 1,
     "name": "Pineapple Cake Bowl",
     "price": 19.99,
-    "imgUrl": "",
+    "imgUrl": "/img/bowl-1.png",
     "description": "Coconut milk, apple juice, banana, pineapple, protein powder, avocado, and a hint of maca powder. Topped with granola, almond butter, strawberries, blueberries, bananas, hemp seeds and local honey. 573cal"
   },
   {
     "id": 2,
     "name": "Smooth Acai Bowl",
     "price": 22.99,
-    "imgUrl": "",
+    "imgUrl": "/img/bowl-2.png",
     "description": "Acai, avocado, banana, strawberry, blueberry, and juiced apple. Topped with granola, almond butter, strawberries, blueberries, bananas, hemp seeds, and local honey. 620cal"
   },
   {
     "id": 3,
     "name": "Athlete Bowl",
     "price": 24.99,
-    "imgUrl": "",
+    "imgUrl": "/img/bowl-3.png",
     "description": "Banana, spinach, protein powder, peanut butter, cacao powder, sea salt, and almond milk. Topped with granola, almond butter, strawberries, blueberries, bananas, hemp seeds, and local honey. 663cal"
   },
   {
     "id": 4,
     "name": "Greens Bowl",
     "price": 18.99,
-    "imgUrl": "",
+    "imgUrl": "/img/bowl-4.png",
     "description": "Coconut milk base with spinach, kale, pineapple, banana, lemon, and apple juice. Topped with granola, almond butter, strawberries, blueberries, bananas, hemp seeds, and local honey. 511cal"
   },
   {
     "id": 5,
     "name": "Cappuccino Bowl",
     "price": 17.99,
-    "imgUrl": "",
+    "imgUrl": "/img/bowl-5.png",
     "description": "Almond milk, cognitive coffee powder, almond butter, hemp seeds, banana, and a pinch pink sea salt. Topped with granola, almond butter, strawberries, blueberries, bananas, hemp seeds and local honey. 818cal"
   },
   {
     "id": 6,
     "name": "Strawberry Bowl",
     "price": 21.99,
-    "imgUrl": "",
+    "imgUrl": "/img/bowl-6.png",
     "description": "Strawberries, bananas, apple juice. Topped with granola, almond butter, strawberries, blueberries, bananas, hemp seeds, and local honey. 492cal"
   }
 ]
