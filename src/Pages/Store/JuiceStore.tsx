@@ -20,10 +20,10 @@ export default function JuiceStore({id, name, price, imgUrl}: ItemProps) {
     <div className="mx-auto my-auto px-2">
       <img src={imgUrl} alt="Juice Pictures" className="rounded-2xl" />
       <div className="flex mx-auto my-auto">
-        <h1 className="text-slate-900 md:font-bold text-lg md:text-2xl p-2 mx-auto my-auto">
+        <h1 className="text-slate-900 font-bold text-xl p-2 mx-auto my-auto">
           {name}
         </h1>
-        <h1 className="text-slate-900 md:font-bold text-lg md:text-2xl p-2 mx-auto my-auto">
+        <h1 className="text-slate-900 font-bold text-xl p-2 mx-auto my-auto">
           $ {price}
         </h1>
       </div>

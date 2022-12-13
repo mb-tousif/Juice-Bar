@@ -1,41 +1,41 @@
 [
   {
-    "id": 1,
+    "id": 10,
     "name": "Cucumber Juice",
     "price": 10.99,
     "imgUrl": "/img/juiceBar-1.jpg",
     "description": "Celery, kale, spinach, cucumber, parsley, and lemon. 60cal | 100cal"
   },
   {
-    "id": 2,
+    "id": 11,
     "name": "Greens",
     "price": 12.99,
     "imgUrl": "/img/juiceBar-2.jpg",
     "description": "Spinach, kale, pineapple, banana, lemon, apple juice, coconut milk. 270cal | 360cal"
   },
   {
-    "id": 3,
+    "id": 12,
     "name": "Apple Juice",
     "price": 14.99,
     "imgUrl": "/img/juiceBar-3.jpg",
     "description": "Juiced apple, lemon, dragon-fruit powder, mango, and strawberry. 303cal | 511cal"
   },
   {
-    "id": 4,
+    "id": 13,
     "name": "Combo Couple Pack",
     "price": 26.99,
     "imgUrl": "/img/juiceBar-4.jpg",
     "description": "Apple juice, peanut butter, avocado, strawberries, and bananas. 538cal | 697cal"
   },
   {
-    "id": 5,
+    "id": 14,
     "name": "Refreshing FNF Pack",
     "price": 24.99,
     "imgUrl": "/img/juiceBar-5.jpg",
     "description": "Carrot, apple, pineapple, lemon, ginger, and mint. 180cal | 270cal"
   },
   {
-    "id": 6,
+    "id": 15,
     "name": "Summer FNF Pack",
     "price": 22.99,
     "imgUrl": "/img/juiceBar-6.jpg"

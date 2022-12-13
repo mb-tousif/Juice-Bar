@@ -1,20 +1,20 @@
 [
   {
-    "id": 1,
+    "id": 7,
     "name": "Golden Milk Coffee",
     "price": 6.99,
     "imgUrl": "/img/coffee-1.png",
     "description": "Coconut milk, almond butter, turmeric, ginger, cinnamon, honey, and black pepper. 362cal"
   },
   {
-    "id": 2,
+    "id": 8,
     "name": "Juice Bar Coffee",
     "price": 8.99,
     "imgUrl": "/img/coffee-2.png",
     "description": "MCT oil, Arabica coffee, coconut milk, Lion’s Mane mushroom extract, Reishi mushroom extract, Chaga mushroom extract, and almond butter. 300cal"
   },
   {
-    "id": 3,
+    "id": 9,
     "name": "Almond Nut Milk",
     "price": 5.99,
     "imgUrl": "/img/coffee-3.png",
