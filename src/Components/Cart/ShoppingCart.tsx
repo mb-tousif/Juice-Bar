@@ -11,7 +11,6 @@ interface CartItemProps {
 };
 
 export default function ShoppingCart({ id, quantity }: CartItemProps) {
-  // const { removeFromCart } = useContextAPI();
   const juice = juiceItems.find((i) => i.id === id) 
   const bowls =  bowlsItems.find((i) => i.id === id)
   const coffee =  coffeeItems.find((i) => i.id === id);

@@ -4,9 +4,11 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../Images/logo.png";
+import { useContextAPI } from "../../Context/CartContext";
 
 export default function Header() {
   const [open, setOpen] = useState<Boolean>(false);
+  const { cartQuantity } = useContextAPI();
   return (
     <nav className="bg-[#184f18f3] relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,9 +48,12 @@ export default function Header() {
                 </Link>
                 <Link
                   to="/cart"
-                  className="text-white mx-auto my-auto justify-end rounded-md text-base md:text-lg font-medium"
+                  className="flex text-white mx-auto my-auto justify-end rounded-md text-base md:text-lg font-medium"
                 >
                   <FaShoppingCart className="w-7 py-0.5 h-7" />
+                  <span className="px-1.5 text-center align-baseline font-bold bg-red-600 text-white rounded">
+                    {cartQuantity}
+                  </span>
                 </Link>
               </div>
             </div>
