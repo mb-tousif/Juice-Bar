@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import juiceItems from "../../Utilities/juicesData.json"
+import juiceItems from "../../Utilities/juicesData.json";
 import JuiceStore from './JuiceStore';
 import coffeeItems from "../../Utilities/coffeeMilk.json";
 import CoffeeStore from './CoffeeStore';
