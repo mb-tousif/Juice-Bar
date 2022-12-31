@@ -20,7 +20,7 @@ export default function Header() {
                 Fresh Juice Bar
               </h1>
             </div>
-            <div className="hidden mx-auto my-auto md:block">
+            <div className="hidden mx-auto my-auto sm:block">
               <div className="flex justify-end -mr-2 items-baseline">
                 <Link
                   to="/"
@@ -58,7 +58,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div onClick={() => setOpen(!open)} className="-mr-2 flex md:hidden">
+          <div onClick={() => setOpen(!open)} className="-mr-2 flex sm:hidden">
             {open ? (
               <AiOutlineClose className="w-8 h-8 text-gray-50" />
             ) : (
@@ -72,7 +72,7 @@ export default function Header() {
           open ? "block" : "hidden"
         } absolute z-20 bg-lime-900 w-full opacity-90`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="px-2 pt-2 sm:hidden pb-3 space-y-1 sm:px-3">
           <Link
             to="/"
             className="text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -99,9 +99,12 @@ export default function Header() {
           </Link>
           <Link
             to="/cart"
-            className="text-white block px-3 py-2 text-base font-medium"
+            className="flex text-white px-3 py-2 text-base font-medium"
           >
             <FaShoppingCart className="w-7 h-7" />
+            <span className="px-1.5 text-center font-bold bg-yellow-400 rounded">
+              {cartQuantity}
+            </span>
           </Link>
         </div>
       </div>

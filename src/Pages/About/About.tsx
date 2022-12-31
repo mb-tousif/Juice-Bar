@@ -2,10 +2,11 @@ import React from 'react'
 import about from '../../Images/About.png'
 import avatar from '../../Images/owner.jpg'
 
+
 export default function About() {
   return (
-    <div className="text-center">
-      <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold text-lime-800 mt-2 mb-2">/ OUR STORY</h1>
+    <div className="text-center bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED]">
+      <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold text-lime-800 pt-2 pb-2">/ OUR STORY</h1>
       <div className="p-4">
         <img src={about} alt="About" className='mx-auto my-auto max-h-80 rounded-full border-4 border-emerald-800' />
       </div>
@@ -15,7 +16,7 @@ export default function About() {
         <img src={avatar} alt="About" className='mx-auto my-auto max-h-80 rounded-full border-4 border-emerald-800' />
       </div>
       <span className="text-3xl font-medium text-lime-800 hover:underline mt-2 mb-2">Jon Due</span>
-      <h1 className="text-2xl text-lime-800 mt-2 mb-2">Founder</h1>
+      <h1 className="text-2xl text-lime-800 pt-2 pb-2">Founder</h1>
     </div>
   );
 }

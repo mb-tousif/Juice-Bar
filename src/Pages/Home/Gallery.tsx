@@ -4,7 +4,7 @@ import styles from "../../Style/Home.module.css";
 export default function Gallery() {
 
   return (
-    <div className="grid mb-4 md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-3">
+    <div className="grid pb-4 md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-3">
       <div className={`overflow-hidden mx-auto ${styles.card}`}>
         <div className={styles.cardImage1}></div>
         <div className={styles.cardDescription}>
