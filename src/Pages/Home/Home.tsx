@@ -9,8 +9,8 @@ export default function Home() {
         Welcome To Juice Bar!
       </h1>
       <HeroSection />
-      <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold text-lime-800 pb-4">
-        Booster Juice!
+      <h1 className="text-xl mb-4 sm:text-2xl md:text-3xl text-center font-bold text-lime-800 pb-4">
+        HAVE FUN. BE AMAZING.
       </h1>
       <Gallery />
     </div>
