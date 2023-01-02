@@ -1,3 +1,4 @@
+/* Home Gallery Card CSS */
 
 .card {
     height: 20rem;
@@ -107,4 +108,14 @@
     .card {
             width: 25rem;
     }
+}
+
+
+/* ///.............subscribe section-------------------- */
+
+.subscribeBackground {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/wonerBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
