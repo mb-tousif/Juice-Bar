@@ -7,7 +7,7 @@ export default function Login() {
     }
   return (
     <div className="bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] pt-8 pb-8 flex justify-center">
-      <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+      <div className="block p-6 rounded-lg shadow-lg sm:w-3/5 bg-white max-w-sm">
         <h1 className="text-2xl font-bold mb-4 text-center text-lime-800">Please Login Here</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
@@ -26,15 +26,19 @@ export default function Login() {
           <div className="h-0.5 mb-6 bg-slate-600"></div>
           <div className="text-center mb-6">
             <input
-              type="checkbox"
+              type="checkbox" id="agree"
               className="h-4 w-4 border-none rounded-sm bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] checked:bg-[#022b53] transition duration-200 mt-1 align-top mr-2 cursor-pointer"
             />
-            <label className="inline-block text-gray-800" htmlFor="exampleCheck96">I have read and agree to the terms.</label>
+            <label htmlFor="agree" className="inline-block text-gray-800">I have read and agree to the terms.</label>
           </div>
           <button type="submit" className="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] rounded transition ease-in-out m-0 placeholder-teal-900">
-            Login
+            Login 🥤
           </button>
         </form>
+        <div className="h-0.5 mb-2 mt-6 bg-slate-600"></div>
+        <div className="mb-2 text-center text-lg">
+         New to here ? <Link to={"/signIn"}>Please Sign In.</Link>
+        </div>
       </div>
     </div>
   );

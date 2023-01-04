@@ -61,6 +61,12 @@ export default function Header() {
                 >
                   Login
                 </Link>
+                <Link
+                  to="/signIn"
+                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+                >
+                  Sign In
+                </Link>
               </div>
             </div>
           </div>
@@ -117,6 +123,12 @@ export default function Header() {
             className="text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Login
+          </Link>
+          <Link
+            to="/signIn"
+            className="text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Sign In
           </Link>
         </div>
       </div>
