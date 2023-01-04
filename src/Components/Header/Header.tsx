@@ -55,6 +55,12 @@ export default function Header() {
                     {cartQuantity}
                   </span>
                 </Link>
+                <Link
+                  to="/login"
+                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+                >
+                  Login
+                </Link>
               </div>
             </div>
           </div>
@@ -105,6 +111,12 @@ export default function Header() {
             <span className="px-1.5 ml-1 text-center font-bold bg-yellow-400 rounded">
               {cartQuantity}
             </span>
+          </Link>
+          <Link
+            to="/login"
+            className="text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Login
           </Link>
         </div>
       </div>
