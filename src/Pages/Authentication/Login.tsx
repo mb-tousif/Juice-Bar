@@ -14,6 +14,7 @@ export default function Login() {
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     navigate("/store")
   };
+  
   return (
     <div className="bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] pt-8 pb-8 flex justify-center">
       <div className="block p-6 rounded-lg shadow-lg sm:w-3/5 bg-white max-w-sm">
@@ -52,7 +53,7 @@ export default function Login() {
                 required: { value: true, message: "Password is required" },
                 minLength: {
                   value: 6,
-                  message: "Password minimum length should be six characters",
+                  message: "Enter your sign up Password",
                 },
               })}
               className="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] bg-clip-padding border-none rounded transition ease-in-out m-0 placeholder-teal-900"

@@ -16,6 +16,7 @@ export default function Register() {
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     navigate("/login")
   };
+  
   return (
     <div className="bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] pt-8 pb-8 flex justify-center">
       <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md">
@@ -99,10 +100,10 @@ export default function Register() {
             <input
               type="password"
               {...register("password", {
-                required: { value: true, message: "Password is required" },
+                required: { value: true, message: "Password is required!" },
                 minLength: {
                   value: 6,
-                  message: "Password minimum length should be six characters",
+                  message: "Please provide Strong password!",
                 },
               })}
               className="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gradient-to-b from-[#c1dfc4] to-[#ADCDED] bg-clip-padding border-none rounded transition ease-in-out m-0 placeholder-teal-900"
