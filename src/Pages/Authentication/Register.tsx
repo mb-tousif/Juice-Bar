@@ -13,7 +13,7 @@ type FormValues = {
 
 export default function Register() {
   const { register, formState: { errors }, handleSubmit } = useForm<FormValues>();
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
   const navigate = useNavigate();
   const [loader, setLoader]= useState(false);
 

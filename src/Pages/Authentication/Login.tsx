@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import Loader from "../../Components/Loader/Loader";
 import { MdOutlineVisibilityOff, MdOutlineVisibility } from "react-icons/md";
 
-
 type FormValues = {
   email: string;
   password: string;
@@ -17,7 +16,7 @@ interface CreateLogin {
 export default function Login() {
   const { register, formState: { errors }, handleSubmit } = useForm<FormValues>();
   const navigate = useNavigate();
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
   const [loader, setLoader]= useState(false);
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
@@ -37,8 +36,13 @@ export default function Login() {
     .then((res) => res.json())
     .then((data) => {
       if(data.status ==="success"){
+        // console.log(data)
+        localStorage.setItem("token", data.token);
         setLoader(false)
         navigate("/store")
+      }else{
+        navigate("/login")
+        setLoader(false)
         }
     });
 };
