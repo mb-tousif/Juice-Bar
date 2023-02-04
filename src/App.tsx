@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
-import Loader from './Components/Loader/Loader';
-import { CartContextProvider } from './Context/CartContext';
-import About from './Pages/About/About';
-import Login from './Pages/Authentication/Login';
-import Register from './Pages/Authentication/Register';
-import Contact from './Pages/Contact/Contact';
-import Home from './Pages/Home/Home';
-import Cart from './Pages/Shop/Cart';
-import Store from './Pages/Store/Store';
+import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+import Loader from "./Components/Loader/Loader";
+import { CartContextProvider } from "./Context/CartContext";
+import RequireAuth from "./Hooks/RequireAuth";
+import About from "./Pages/About/About";
+import Login from "./Pages/Authentication/Login";
+import Register from "./Pages/Authentication/Register";
+import Contact from "./Pages/Contact/Contact";
+import Home from "./Pages/Home/Home";
+import Cart from "./Pages/Shop/Cart";
+import Store from "./Pages/Store/Store";
 
 function App() {
   const [loader, setLoader] = useState<Boolean>(false);
@@ -32,11 +33,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/store" element={<Store />} />
+          {/* <Route path="/store" element={<Store />} /> */}
+          <Route
+            path="/store"
+            element={
+              <RequireAuth>
+                <Store />
+              </RequireAuth>
+            }
+          />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signIn" element={<Register/>} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signIn" element={<Register />} />
         </Routes>
       )}
       <Footer />

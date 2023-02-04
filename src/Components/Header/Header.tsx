@@ -5,10 +5,16 @@ import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../Images/logo.png";
 import { useContextAPI } from "../../Context/CartContext";
+import useUser from "../../Hooks/useUser";
 
 export default function Header() {
+  const [token] = useUser();
   const [open, setOpen] = useState<Boolean>(false);
   const { cartQuantity } = useContextAPI();
+  const handleSignOut =()=>{
+    localStorage.removeItem("token");
+    window.location.reload();
+  }
   return (
     <nav className="bg-[#184f18f3] relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,12 +61,22 @@ export default function Header() {
                     {cartQuantity}
                   </span>
                 </Link>
-                <Link
-                  to="/login"
-                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
-                >
-                  Login
-                </Link>
+                {token ? (
+                  <Link
+                    to="/"
+                    className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+                    onClick={()=>{handleSignOut()}}
+                  >
+                    Sign Out
+                  </Link>
+                ) : (
+                  <Link
+                    to="/login"
+                    className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+                  >
+                    Login
+                  </Link>
+                )}
                 <Link
                   to="/signIn"
                   className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
@@ -118,12 +134,22 @@ export default function Header() {
               {cartQuantity}
             </span>
           </Link>
-          <Link
-            to="/login"
-            className="text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Login
-          </Link>
+          {token ? (
+            <Link
+              to="/"
+              className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+              onClick={()=>{handleSignOut()}}
+            >
+              Sign Out
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+            >
+              Login
+            </Link>
+          )}
           <Link
             to="/signIn"
             className="text-white block px-3 py-2 rounded-md text-base font-medium"

@@ -40,6 +40,7 @@ export default function Login() {
         localStorage.setItem("token", data.token);
         setLoader(false)
         navigate("/store")
+        window.location.reload();
       }else{
         navigate("/login")
         setLoader(false)
