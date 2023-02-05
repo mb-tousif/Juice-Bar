@@ -33,7 +33,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/store" element={<Store />} /> */}
           <Route
             path="/store"
             element={
@@ -42,8 +41,15 @@ function App() {
               </RequireAuth>
             }
           />
+          <Route
+            path="/cart"
+            element={
+              <RequireAuth>
+                <Cart />
+              </RequireAuth>
+            }
+          />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signIn" element={<Register />} />
         </Routes>
