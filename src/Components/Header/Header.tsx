@@ -47,12 +47,6 @@ export default function Header() {
                   Store
                 </Link>
                 <Link
-                  to="/contact"
-                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
-                >
-                  Contact
-                </Link>
-                <Link
                   to="/cart"
                   className="flex text-white mx-auto my-auto justify-end rounded-md text-base md:text-lg font-medium"
                 >
@@ -60,6 +54,12 @@ export default function Header() {
                   <span className="px-1.5 ml-1.5 text-center align-baseline font-bold bg-red-600 text-white rounded">
                     {cartQuantity}
                   </span>
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+                >
+                  Contact
                 </Link>
                 {token ? (
                   <Link
@@ -77,12 +77,6 @@ export default function Header() {
                     Login
                   </Link>
                 )}
-                <Link
-                  to="/signIn"
-                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
-                >
-                  Sign In
-                </Link>
               </div>
             </div>
           </div>
@@ -120,12 +114,6 @@ export default function Header() {
             Store
           </Link>
           <Link
-            to="/contact"
-            className="text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
-          </Link>
-          <Link
             to="/cart"
             className="flex text-white px-3 py-2 text-base font-medium"
           >
@@ -133,6 +121,12 @@ export default function Header() {
             <span className="px-1.5 ml-1 text-center font-bold bg-yellow-400 rounded">
               {cartQuantity}
             </span>
+          </Link>
+          <Link
+            to="/contact"
+            className="text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Contact
           </Link>
           {token ? (
             <Link
@@ -150,12 +144,6 @@ export default function Header() {
               Login
             </Link>
           )}
-          <Link
-            to="/signIn"
-            className="text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Sign In
-          </Link>
         </div>
       </div>
     </nav>

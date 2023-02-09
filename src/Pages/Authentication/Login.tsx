@@ -149,7 +149,7 @@ export default function Login() {
         </form>
         <div className="h-0.5 mb-2 mt-6 bg-slate-600"></div>
         <div className="mb-2 text-center text-lg">
-          New to here ? <Link to={"/signIn"}>Please Sign In.</Link>
+          New to here ? <Link to={"/signIn"} className="text-[#b26014] animate-pulse hover:text-rose-600">Please Sign In.</Link>
         </div>
       </div>
     </div>

@@ -183,7 +183,7 @@ export default function Register() {
         </form>
         <div className="h-0.5 mb-2 mt-6 bg-slate-600"></div>
         <div className="mb-2 text-center text-lg">
-          Already Sign up ? <Link to={"/login"}>Login now </Link>
+          Already Sign up ? <Link to={"/login"} className="text-[#b26014] animate-pulse hover:text-rose-600">Login now </Link>
         </div>
       </div>
     </div>
