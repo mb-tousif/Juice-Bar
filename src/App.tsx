@@ -1,62 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Loader from "./Components/Loader/Loader";
-import { CartContextProvider } from "./Context/CartContext";
-import RequireAuth from "./Hooks/RequireAuth";
-import About from "./Pages/About/About";
-import Login from "./Pages/Authentication/Login";
-import Register from "./Pages/Authentication/Register";
-import Contact from "./Pages/Contact/Contact";
-import Home from "./Pages/Home/Home";
-import Cart from "./Pages/Shop/Cart";
-import Store from "./Pages/Store/Store";
+import React from 'react';
+import Main from './Layout/Main';
 
-function App() {
-  const [loader, setLoader] = useState<Boolean>(false);
-
-  useEffect(() => {
-    setLoader(true);
-    setTimeout(() => {
-      setLoader(false);
-    }, 3000);
-  }, []);
-
+const App: React.FC = () => {
   return (
-    <CartContextProvider>
-      <Header />
-      {loader ? (
-        <Loader />
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route
-            path="/store"
-            element={
-              <RequireAuth>
-                <Store />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="/cart"
-            element={
-              <RequireAuth>
-                <Cart />
-              </RequireAuth>
-            }
-          />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signIn" element={<Register />} />
-        </Routes>
-      )}
-      <Footer />
-    </CartContextProvider>
+    <>
+    <Main/>
+    </>
   );
-}
+};
 
 export default App;
