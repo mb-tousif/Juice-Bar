@@ -5,15 +5,13 @@ import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../Images/logo.png";
 import { useContextAPI } from "../../Context/CartContext";
-import useUser from "../../Hooks/useUser";
 
 export default function Header() {
-  const [token] = useUser();
   const [open, setOpen] = useState<Boolean>(false);
-  const { cartQuantity } = useContextAPI();
+  const { cartQuantity,token, setToken } = useContextAPI();
   const handleSignOut =()=>{
-    localStorage.removeItem("token");
-    window.location.reload();
+    localStorage.removeItem("token")
+    setToken("")
   }
   return (
     <nav className="bg-[#184f18f3] relative z-10">
@@ -61,21 +59,21 @@ export default function Header() {
                 >
                   Contact
                 </Link>
-                {token ? (
+                {token.length > 0 ?(
                   <Link
-                    to="/"
-                    className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
-                    onClick={()=>{handleSignOut()}}
-                  >
-                    Sign Out
-                  </Link>
+                  to="/"
+                  className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+                  onClick={()=>{handleSignOut()}}
+                >
+                  Sign Out
+                </Link>
                 ) : (
-                  <Link
-                    to="/login"
-                    className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
-                  >
-                    Login
-                  </Link>
+                 <Link
+                 to="/login"
+                 className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
+               >
+                 Login
+               </Link>
                 )}
               </div>
             </div>
@@ -128,7 +126,7 @@ export default function Header() {
           >
             Contact
           </Link>
-          {token ? (
+          {token.length > 0  ? (
             <Link
               to="/"
               className="text-white px-3 py-2 justify-end rounded-md text-base md:text-lg font-medium"
