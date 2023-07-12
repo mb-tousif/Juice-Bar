@@ -1,8 +1,9 @@
 import React,{useState} from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Loader from "../../Components/Loader/Loader";
 import { MdOutlineVisibilityOff, MdOutlineVisibility } from "react-icons/md";
+import { useContextAPI } from "../../Context/CartContext";
 
 type FormValues = {
   email: string;
@@ -16,9 +17,11 @@ interface CreateLogin {
 export default function Login() {
   const { register, formState: { errors }, handleSubmit } = useForm<FormValues>();
   const navigate = useNavigate();
+  const location = useLocation();
   const [showPassword, setShowPassword] = useState(true);
   const [loader, setLoader]= useState(false);
-
+  const { setToken }= useContextAPI();
+  const from = location.state?.from || "/store";
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     const checkUser:CreateLogin ={
       email: data.email,
@@ -35,16 +38,15 @@ export default function Login() {
   })
     .then((res) => res.json())
     .then((data) => {
-      if(data.status ==="success"){
-        // console.log(data)
+      if (data.token) {
         localStorage.setItem("token", data.token);
-        setLoader(false)
-        navigate("/store")
-        window.location.reload();
-      }else{
-        navigate("/login")
-        setLoader(false)
-        }
+        setLoader(false);
+        setToken(data.token);
+        navigate(from, { replace: true });
+      } else {
+        navigate("/login");
+        setLoader(false);
+      }
     });
 };
 

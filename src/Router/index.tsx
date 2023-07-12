@@ -8,6 +8,7 @@ import Cart from "../Pages/Shop/Cart";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Authentication/Login";
 import Register from "../Pages/Authentication/Register";
+import RequireAuth from "../Hooks/RequireAuth";
 
 const router = createBrowserRouter([
     {
@@ -25,11 +26,19 @@ const router = createBrowserRouter([
             },
             {
                 path: "/store",
-                element: <Store/>
+                element: (
+                    <RequireAuth>
+                        <Store/>
+                    </RequireAuth>
+                )
             },
             {
                 path: "/cart",
-                element: <Cart/>
+                element: (
+                    <RequireAuth>
+                        <Cart/>
+                    </RequireAuth>
+                )
             },
             {
                 path: "/contact",
