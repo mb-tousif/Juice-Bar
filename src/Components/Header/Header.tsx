@@ -3,11 +3,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../Images/logo.png";
 import { useContextAPI } from "../../Context/CartContext";
+import logo from "../../Images/logo.png";
 
 export default function Header() {
-  const [open, setOpen] = useState<Boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
   const { cartQuantity,token, setToken } = useContextAPI();
   const handleSignOut =()=>{
     localStorage.removeItem("token")

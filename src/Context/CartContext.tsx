@@ -18,6 +18,7 @@ interface ShoppingCartContext {
 }
 
 const CartContext = createContext({} as ShoppingCartContext);
+// eslint-disable-next-line react-refresh/only-export-components
 export function useContextAPI() {
   return useContext(CartContext);
 }

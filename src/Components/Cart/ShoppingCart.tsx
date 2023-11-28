@@ -1,4 +1,3 @@
-import React from 'react'
 import { useContextAPI } from '../../Context/CartContext';
 import bowlsItems from "../../Utilities/bowls.json";
 import coffeeItems from "../../Utilities/coffeeMilk.json";
@@ -7,7 +6,7 @@ import juiceItems from "../../Utilities/juicesData.json";
 interface CartItemProps {
   id: number;
   quantity: number;
-};
+}
 
 export default function ShoppingCart({ id, quantity }: CartItemProps) {
   const { removeFromCart }=useContextAPI();

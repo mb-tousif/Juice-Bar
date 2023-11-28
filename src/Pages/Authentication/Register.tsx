@@ -30,9 +30,10 @@ export default function Register() {
       })
       .then(res=>res.json())
       .then(data=>{
-        if(data.status ==="success"){
-        setLoader(false)
-        navigate("/login")
+        console.log(data)
+        if (data.status === "success 🎉.") {
+          setLoader(false);
+          navigate("/login");
         }
       })
   };

@@ -1,4 +1,3 @@
-import React from 'react'
 import Gallery from './Gallery';
 import HeroSection from './HeroSection';
 import SubscribeSection from './SubscribeSection';
