@@ -4,7 +4,7 @@ import hero from '../../Images/juiceHero.png'
 export default function HeroSection() {
   return (
     <section className="mb-16 p-4 text-[#fc6a52]">
-    <div className="block rounded-lg shadow-lg bg-gradient-to-b from-[#d1fdff] to-[#fddb92]">
+    <div className="block rounded-lg shadow-lg">
       <div className="flex flex-wrap items-center">
         <div className="lg:flex pl-2 grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-4/12">
           <img src={hero} alt="Trendy Pants and Shoes" className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" />

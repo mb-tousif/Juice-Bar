@@ -7,7 +7,7 @@ export default function SubscribeSection() {
     window.alert("Subscription is done");
   };
   return (
-    <div className="p-2 pb-6 sm:p-4">
+    <div className="p-2 mb-6 pb-6 sm:p-4">
       <div className={`${styles.subscribeBackground} py-20 rounded-2xl shadow-2xl`}>
         <div className="text-white max-w-7xl mx-auto px-10 lg:px-20 justify-center items-center text-center ">
           <h2 className="sm:text-4xl text-2xl font-bold">Subscribe for Juice Bar 🥤 Offers</h2>
